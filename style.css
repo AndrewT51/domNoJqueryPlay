@@ -1,3 +1,42 @@
 td {
   border: black solid 1px;
 }
+button {
+  margin: 5px;
+  background-color: lightgrey;
+  width: 100px;
+}
+input {
+  width:200px;
+}
+#pickRandom{
+  width: 300px;
+}
+.centre {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#here{
+  margin: 0 auto;
+}
+
+#random{
+  margin: 0 auto;
+  text-align: center;
+}
+
+#teamTable {
+
+  margin: 10px auto;
+
+  background-color: beige;
+  border: black solid 1px;
+  border-radius: 10px;
+
+}
+
+#teamTable td {
+  padding:5px;
+  background-color: lightgrey;
+}
