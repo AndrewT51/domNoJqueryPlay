@@ -8,9 +8,15 @@
   function init(){
     updateTable();
     $('#save').click(addPerson);
+    $('#cancel').click(clearModal);
     $(document).on('click','.removePerson',removePerson)
     $(document).on('click','.edit',editContact)
     $('.sort').click(sorter);
+  }
+  
+  function clearModal(){
+    $('.form-group').children().val('');
+    editing = -1;
   }
 
   function addPerson(){
@@ -24,6 +30,7 @@
         })
       }
       localStorage.contacts = JSON.stringify(currentList);
+      clearModal();
       updateTable();
     }
 

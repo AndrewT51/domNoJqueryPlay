@@ -7,22 +7,20 @@
 </head>
 <body>
   <div class="container">
-   
+    <h1 class='col-xs-4 col-xs-offset-4'>Contacts List</h1>
 
-    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">
-      Add a contact
-    </button>
     <table class="table table-striped">
       <th id='orderByname'  class='sort'>Name</th>
       <th id='orderByemail' class='sort'>Email</th>
       <th id='orderByphone' class='sort'>Phone number</th>
       <th id='orderByaddress' class='sort'>Blurb</th>
-      <th></th>
+      <th><button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">
+      Add a contact
+    </button></th>
       <tbody class='tableBody'>
         
       </tbody>
     </table>
-
 
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -53,7 +51,7 @@
             
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-default" id='cancel' data-dismiss="modal">Cancel</button>
             <button type="button" class="btn btn-primary" id='save' data-dismiss="modal">Save changes</button>
           </div>
         </div>
