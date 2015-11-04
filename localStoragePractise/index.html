@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+   
+
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">
+      Add a contact
+    </button>
+    <table class="table table-striped">
+      <th id='orderByname'  class='sort'>Name</th>
+      <th id='orderByemail' class='sort'>Email</th>
+      <th id='orderByphone' class='sort'>Phone number</th>
+      <th id='orderByaddress' class='sort'>Blurb</th>
+      <th></th>
+      <tbody class='tableBody'>
+        
+      </tbody>
+    </table>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Insert Contact Details</h4>
+            
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="usr">Name:</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone number:</label>
+              <input type="text" class="form-control" id="phone">
+            </div>
+            <div class="form-group">
+              <label for="address">Blurb:</label>
+              <textarea name="address" id="address" cols="20" rows="5" class='form-control'></textarea>
+            </div>
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary" id='save' data-dismiss="modal">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
